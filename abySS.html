@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$Abyssum (ABY) 🔥 - The Dark Force That Burns and Evolves</title>
+  <style>
+    :root {
+      --abyss: ##2A1B4E;
+      --dark-purple: #3A1B6B;
+      --neon-purple: #8A2BE2;
+      --burning-orange: #FF5F1F;
+      --hellfire: #FF2400;
+      --void: #000000;
+      --emerald-flame: #00FF7F;
+      --blood-red: #D10000;
+      --ghost-white: #F8F8FF;
+      --smoke: rgba(138, 43, 226, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Oxanium', 'Rajdhani', sans-serif;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+    body {
+      background-color: var(--abyss);
+      color: var(--ghost-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: rgba(10, 4, 16, 0.95);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(255, 95, 31, 0.3);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--neon-purple);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--burning-orange);
+      display: flex;
+      align-items: center;
+      text-shadow: 0 0 10px rgba(255, 95, 31, 0.5);
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--emerald-flame);
+      margin-left: 5px;
+      text-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
+    }
+
+    .logo-icon {
+      font-size: 32px;
+      margin-right: 10px;
+      filter: drop-shadow(0 0 5px rgba(255, 36, 0, 0.7));
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 35px;
+    }
+
+    .nav-links a {
+      color: var(--ghost-white);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Oxanium', sans-serif;
+      transition: all 0.3s;
+      position: relative;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a:hover {
+      color: var(--burning-orange);
+      text-shadow: 0 0 8px rgba(255, 95, 31, 0.7);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: var(--hellfire);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .button {
+      background: linear-gradient(135deg, var(--burning-orange), var(--hellfire));
+      color: var(--ghost-white);
+      padding: 12px 28px;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 20px rgba(255, 95, 31, 0.4);
+      text-transform: uppercase;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 25px rgba(255, 36, 0, 0.6);
+      background: linear-gradient(135deg, var(--hellfire), var(--burning-orange));
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(10, 4, 16, 0.9), rgba(42, 11, 69, 0.95)), url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding-top: 100px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 50%, transparent 0%, var(--abyss) 70%);
+      z-index: 0;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+      color: var(--burning-orange);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      text-shadow: 0 0 15px rgba(255, 95, 31, 0.7), 0 0 30px rgba(210, 0, 0, 0.5);
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: var(--ghost-white);
+      font-weight: 400;
+      font-family: 'Oxanium', sans-serif;
+      text-shadow: 0 0 10px rgba(248, 248, 255, 0.3);
+      letter-spacing: 1px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .cta-btn {
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 16px;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .primary-btn {
+      background: linear-gradient(135deg, var(--neon-purple), var(--emerald-flame));
+      color: var(--ghost-white);
+      box-shadow: 0 5px 25px rgba(138, 43, 226, 0.5);
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 35px rgba(0, 255, 127, 0.6);
+      background: linear-gradient(135deg, var(--emerald-flame), var(--neon-purple));
+    }
+
+    .secondary-btn {
+      background-color: transparent;
+      color: var(--ghost-white);
+      border: 2px solid var(--neon-purple);
+      box-shadow: 0 5px 20px rgba(138, 43, 226, 0.3);
+    }
+
+    .secondary-btn:hover {
+      background-color: rgba(138, 43, 226, 0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+      border-color: var(--emerald-flame);
+    }
+
+    .token-logo {
+      width: 300px;
+      height: 300px;
+      margin: 40px auto;
+      position: relative;
+      filter: drop-shadow(0 0 20px rgba(255, 95, 31, 0.7));
+    }
+
+    /* About Section */
+    .about {
+      padding: 120px 0;
+      background-color: var(--dark-purple);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%238A2BE2' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .section-heading h2 {
+      font-size: 48px;
+      color: var(--burning-orange);
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      font-family: 'Rajdhani', sans-serif;
+      text-shadow: 0 0 10px rgba(255, 95, 31, 0.5);
+      letter-spacing: 2px;
+    }
+
+    .section-heading h2::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--burning-orange), var(--hellfire));
+      border-radius: 2px;
+      box-shadow: 0 0 10px rgba(255, 36, 0, 0.7);
+    }
+
+    .section-heading p {
+      font-size: 18px;
+      color: var(--ghost-white);
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: 'Oxanium', sans-serif;
+    }
+
+    .about-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      font-family: 'Oxanium', sans-serif;
+      color: var(--ghost-white);
+    }
+
+    .about-text strong {
+      color: var(--emerald-flame);
+      font-weight: 600;
+    }
+
+    .about-image {
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      border: 2px solid var(--neon-purple);
+      transition: transform 0.5s;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Features Section */
+    .features {
+      padding: 120px 0;
+      background-color: var(--abyss);
+      position: relative;
+    }
+
+    .features::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, var(--dark-purple) 0%, var(--abyss) 100%);
+      z-index: -1;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .feature-card {
+      background: linear-gradient(145deg, rgba(42, 11, 69, 0.8), rgba(10, 4, 16, 0.9));
+      border-radius: 15px;
+      padding: 35px;
+      border-left: 4px solid var(--hellfire);
+      transition: all 0.4s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255, 95, 31, 0.1), rgba(138, 43, 226, 0.1));
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(255, 36, 0, 0.3);
+      border-left-color: var(--emerald-flame);
+    }
+
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+
+    .feature-icon {
+      font-size: 50px;
+      margin-bottom: 25px;
+      color: var(--burning-orange);
+      text-shadow: 0 0 10px rgba(255, 95, 31, 0.5);
+    }
+
+    .feature-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: var(--emerald-flame);
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--ghost-white);
+      font-family: 'Oxanium', sans-serif;
+    }
+
+    /* Functionality Section */
+    .functionality {
+      padding: 120px 0;
+      background-color: var(--dark-purple);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .functionality::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(138, 43, 226, 0.05) 0%, transparent 70%);
+      animation: rotate 60s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .functions-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .function-item {
+      flex: 1;
+      min-width: 250px;
+      background: rgba(10, 4, 16, 0.7);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid rgba(138, 43, 226, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .function-item::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 95, 31, 0.1) 0%, transparent 70%);
+      z-index: -1;
+      transition: all 0.5s;
+      opacity: 0;
+    }
+
+    .function-item:hover {
+      border-color: var(--emerald-flame);
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 255, 127, 0.2);
+    }
+
+    .function-item:hover::before {
+      opacity: 1;
+      transform: rotate(180deg);
+    }
+
+    .function-number {
+      background: linear-gradient(135deg, var(--neon-purple), var(--hellfire));
+      color: var(--ghost-white);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 0 auto 25px;
+      font-size: 24px;
+      font-family: 'Rajdhani', sans-serif;
+      box-shadow: 0 0 20px rgba(255, 95, 31, 0.6);
+      border: 2px solid var(--ghost-white);
+    }
+
+    .function-item h3 {
+      color: var(--burning-orange);
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .function-item p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--ghost-white);
+      font-family: 'Oxanium', sans-serif;
+    }
+
+    /* Tokenomics Section */
+    .tokenomics {
+      padding: 120px 0;
+      background-color: var(--abyss);
+      position: relative;
+    }
+
+    .tokenomics::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--neon-purple), transparent);
+    }
+
+    .tokenomics-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .tokenomics-chart {
+      flex: 1;
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .tokenomics-info {
+      flex: 1;
+    }
+
+    .tokenomics-item {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-radius: 10px;
+      transition: all 0.3s;
+      background: rgba(42, 11, 69, 0.5);
+      border-left: 4px solid transparent;
+    }
+
+    .tokenomics-item:hover {
+      background: rgba(138, 43, 226, 0.2);
+      transform: translateX(10px);
+      border-left-color: var(--burning-orange);
+    }
+
+    .token-color {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-right: 20px;
+      box-shadow: 0 0 10px currentColor;
+      flex-shrink: 0;
+    }
+
+    .community {
+      background-color: var(--neon-purple);
+    }
+
+    .staking {
+      background-color: var(--emerald-flame);
+    }
+
+    .burn-events {
+      background-color: var(--hellfire);
+    }
+
+    .team {
+      background-color: var(--burning-orange);
+    }
+
+    .marketing {
+      background-color: var(--blood-red);
+    }
+
+    .tokenomics-item strong {
+      font-size: 18px;
+      color: var(--ghost-white);
+      font-family: 'Rajdhani', sans-serif;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .tokenomics-item p {
+      font-size: 14px;
+      color: rgba(248, 248, 255, 0.8);
+      font-family: 'Oxanium', sans-serif;
+    }
+
+    /* CTA Section */
+    .cta {
+      padding: 120px 0;
+      background: linear-gradient(rgba(10, 4, 16, 0.9), rgba(42, 11, 69, 0.95)), url('https://images.unsplash.com/photo-1518562180175-34a163b1c920?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, transparent 0%, var(--abyss) 80%);
+      z-index: 0;
+    }
+
+    .cta .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta h2 {
+      font-size: 48px;
+      color: var(--burning-orange);
+      margin-bottom: 30px;
+      font-family: 'Rajdhani', sans-serif;
+      text-shadow: 0 0 15px rgba(255, 95, 31, 0.5);
+      letter-spacing: 2px;
+    }
+
+    .cta p {
+      font-size: 20px;
+      color: var(--ghost-white);
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-family: 'Oxanium', sans-serif;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark-purple);
+      padding: 80px 0 30px;
+      position: relative;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--neon-purple), transparent);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-logo {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .footer-logo h3 {
+      color: var(--burning-orange);
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .footer-logo p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--ghost-white);
+      font-family: 'Oxanium', sans-serif;
+      opacity: 0.8;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--neon-purple), var(--burning-orange));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ghost-white);
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 20px;
+      box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+    }
+
+    .social-icon:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(255, 95, 31, 0.6);
+      background: linear-gradient(135deg, var(--burning-orange), var(--neon-purple));
+    }
+
+    .footer-links {
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .footer-links h3 {
+      color: var(--emerald-flame);
+      margin-bottom: 25px;
+      font-size: 20px;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      color: var(--ghost-white);
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 16px;
+      font-family: 'Oxanium', sans-serif;
+      display: flex;
+      align-items: center;
+      opacity: 0.8;
+    }
+
+    .footer-links a:hover {
+      color: var(--burning-orange);
+      opacity: 1;
+      transform: translateX(5px);
+    }
+
+    .footer-links a::before {
+      content: '»';
+      margin-right: 10px;
+      color: var(--emerald-flame);
+      opacity: 0;
+      transition: all 0.3s;
+    }
+
+    .footer-links a:hover::before {
+      opacity: 1;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(138, 43, 226, 0.3);
+      font-size: 14px;
+      color: rgba(248, 248, 255, 0.6);
+      font-family: 'Oxanium', sans-serif;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 95, 31, 0.4); }
+      70% { box-shadow: 0 0 0 15px rgba(255, 95, 31, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 95, 31, 0); }
+    }
+
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+
+    .action-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .x-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--neon-purple), var(--burning-orange));
+      color: var(--ghost-white);
+      transition: all 0.3s;
+      box-shadow: 0 4px 10px rgba(138, 43, 226, 0.3);
+    }
+    
+    .x-icon:hover {
+      transform: translateY(-3px) rotate(5deg);
+      box-shadow: 0 6px 15px rgba(255, 36, 0, 0.5);
+      background: linear-gradient(135deg, var(--hellfire), var(--neon-purple));
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .about-content,
+      .tokenomics-content {
+        flex-direction: column;
+      }
+
+      .about-image,
+      .tokenomics-chart {
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero h2 {
+        font-size: 20px;
+      }
+
+      .section-heading h2 {
+        font-size: 36px;
+      }
+
+      .cta h2 {
+        font-size: 36px;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-btn {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .function-item {
+        min-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .section-heading h2 {
+        font-size: 30px;
+      }
+
+      .feature-card,
+      .function-item {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <span class="logo-icon">🔥</span>
+          $ABYSSUM<span> (ABY)</span>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#functionality">Functionality</a>
+          <a href="#tokenomics">Tokenomics</a>
+        </div>
+        <button class="button">Connect Wallet</button>
+        <a href="https://twitter.com/abyssum_crypto" target="_blank" class="x-icon" title="Follow us on X (Twitter)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.6823 10.6219L20.0968 3H18.5661L13.0265 9.50284L8.59518 3H3.1875L9.98861 13.3111L3.1875 21.3333H4.71825L10.6444 14.4302L15.3948 21.3333H20.8125L13.6823 10.6219ZM11.3718 13.4179L10.6394 12.3489L5.23089 4.29333H7.89376L12.2521 10.8138L12.9846 11.8828L18.6246 20.2667H15.9617L11.3718 13.4179Z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>$Abyssum (ABY) 🔥</h1>
+        <h2>The Dark Force That Burns and Evolves!</h2>
+        <div class="cta-buttons">
+          <a href="#" class="cta-btn primary-btn">Buy $ABY</a>
+          <a href="#about" class="cta-btn secondary-btn">Learn More</a>
+        </div>
+        <div class="token-logo floating">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Abyssum Logo with Flames -->
+            <defs>
+              <radialGradient id="flameGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" stop-color="#FF5F1F" stop-opacity="1" />
+                <stop offset="100%" stop-color="#D10000" stop-opacity="0" />
+              </radialGradient>
+              <filter id="flameFilter" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 8 -3" result="glow" />
+                <feComposite in="SourceGraphic" in2="glow" operator="over" />
+              </filter>
+            </defs>
+            
+            <!-- Background Circle -->
+            <circle cx="100" cy="100" r="90" fill="#2A0B45" stroke="#8A2BE2" stroke-width="2" />
+            
+            <!-- Flames -->
+            <g filter="url(#flameFilter)">
+              <path d="M100,30 C110,10 130,10 140,30 C150,50 130,70 100,90 C70,70 50,50 60,30 C70,10 90,10 100,30 Z" fill="url(#flameGradient)" />
+              <path d="M100,40 C105,25 115,25 120,40 C125,55 115,65 100,75 C85,65 75,55 80,40 C85,25 95,25 100,40 Z" fill="#FF5F1F" />
+            </g>
+            
+            <!-- ABY Text -->
+            <text x="100" y="110" font-family="Rajdhani" font-size="30" font-weight="bold" fill="#F8F8FF" text-anchor="middle">ABY</text>
+            <text x="100" y="140" font-family="Rajdhani" font-size="16" fill="#8A2BE2" text-anchor="middle">ABYSSUM</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-heading">
+        <h2>About The Project</h2>
+        <p>Dive into the abyss of deflationary economics</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p><strong>$ABY</strong> is an <strong>ultra-aggressive deflationary token</strong>, designed to become one of the scarcest assets in the market. Inspired by the mythology of the "bottomless abyss," each transaction burns a portion of the total supply, progressively reducing availability.</p>
+          <p>Unlike traditional tokens, $ABY introduces a revolutionary <strong>sacrifice mechanism</strong> where holders can burn tokens to summon special utility NFTs representing powerful abyssal entities.</p>
+          <p>The project combines cutting-edge tokenomics with immersive mythology, creating a unique ecosystem where scarcity is programmatically enforced through:</p>
+          <ul style="margin-top: 20px; list-style-type: none;">
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <span style="color: var(--emerald-flame); margin-right: 15px; font-size: 20px;">✓</span> 
+              <span style="font-family: 'Oxanium', sans-serif;">Automatic burn protocol with every transaction</span>
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <span style="color: var(--emerald-flame); margin-right: 15px; font-size: 20px;">✓</span> 
+              <span style="font-family: 'Oxanium', sans-serif;">Periodic apocalyptic events that destroy massive supply portions</span>
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <span style="color: var(--emerald-flame); margin-right: 15px; font-size: 20px;">✓</span> 
+              <span style="font-family: 'Oxanium', sans-serif;">NFT summoning through token sacrifice (irreversible burning)</span>
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <span style="color: var(--emerald-flame); margin-right: 15px; font-size: 20px;">✓</span> 
+              <span style="font-family: 'Oxanium', sans-serif;">Community-driven DAO for future burn events</span>
+            </li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="abyssum_image.svg" alt="Abyssum Token Concept">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Key Features</h2>
+        <p>What makes $ABY unique in the crypto abyss</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3>Auto-Burn System</h3>
+          <p>3% of every transaction is permanently burned, creating constant deflationary pressure and increasing scarcity over time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👹</div>
+          <h3>Abyssal NFTs</h3>
+          <p>Rare creatures that can only be summoned by sacrificing (burning) $ABY tokens, each with unique utilities and powers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Dark Rewards</h3>
+          <p>Long-term holders receive exclusive boosts, including higher NFT summoning success rates and voting power.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💀</div>
+          <h3>Apocalypse Mechanism</h3>
+          <p>Periodic events destroy large portions of supply when milestones are reached, creating massive scarcity spikes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="functionality" id="functionality">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Core Functionality</h2>
+        <p>How the Abyssum ecosystem operates</p>
+      </div>
+      <div class="functions-container">
+        <div class="function-item">
+          <div class="function-number">1</div>
+          <h3>Creature Summoning</h3>
+          <p>Holders can burn tokens to generate unique NFTs with varying rarity and utility, permanently removing $ABY from circulation.</p>
+        </div>
+        <div class="function-item">
+          <div class="function-number">2</div>
+          <h3>Annihilation Events</h3>
+          <p>At predetermined milestones, substantial portions of the total supply are destroyed, accelerating scarcity.</p>
+        </div>
+        <div class="function-item">
+          <div class="function-number">3</div>
+          <h3>Dark Metaverse</h3>
+          <p>A shadowy digital realm where summoned NFTs can interact, battle, and unlock hidden rewards.</p>
+        </div>
+        <div class="function-item">
+          <div class="function-number">4</div>
+          <h3>Shadow DAO</h3>
+          <p>The community governs future burn rates and annihilation events through decentralized voting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tokenomics" id="tokenomics">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Tokenomics</h2>
+        <p>Strategic distribution for maximum scarcity</p>
+      </div>
+      <div class="tokenomics-content">
+        <div class="tokenomics-chart">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Tokenomics Chart -->
+            <defs>
+              <linearGradient id="communityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8A2BE2" />
+                <stop offset="100%" stop-color="#4B0082" />
+              </linearGradient>
+              <linearGradient id="stakingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00FF7F" />
+                <stop offset="100%" stop-color="#008040" />
+              </linearGradient>
+              <linearGradient id="burnGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FF2400" />
+                <stop offset="100%" stop-color="#800000" />
+              </linearGradient>
+              <linearGradient id="teamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FF5F1F" />
+                <stop offset="100%" stop-color="#CC4000" />
+              </linearGradient>
+              <linearGradient id="marketingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#D10000" />
+                <stop offset="100%" stop-color="#800000" />
+              </linearGradient>
+            </defs>
+            
+            <!-- Background Circle -->
+            <circle cx="100" cy="100" r="90" fill="none" stroke="#2A0B45" stroke-width="2" />
+            
+            <!-- Community (50%) -->
+            <path d="M100,10 A90,90 0 0,1 190,100 L100,100 Z" fill="url(#communityGradient)" />
+            
+            <!-- Staking (20%) -->
+            <path d="M190,100 A90,90 0 0,1 100,190 L100,100 Z" fill="url(#stakingGradient)" />
+            
+            <!-- Burn Events (15%) -->
+            <path d="M100,190 A90,90 0 0,1 10,100 L100,100 Z" fill="url(#burnGradient)" />
+            
+            <!-- Team (10%) -->
+            <path d="M10,100 A90,90 0 0,1 100,10 L100,100 Z" fill="url(#teamGradient)" opacity="0.7" />
+            
+            <!-- Marketing (5%) -->
+            <path d="M100,10 A90,90 0 0,1 100,100 L100,100 Z" fill="url(#marketingGradient)" opacity="0.7" />
+            
+            <!-- Center Text -->
+            <circle cx="100" cy="100" r="40" fill="#0A0410" stroke="#8A2BE2" stroke-width="1" />
+            <text x="100" y="100" font-family="Rajdhani" font-size="14" font-weight="bold" fill="#F8F8FF" text-anchor="middle" dominant-baseline="middle">666M</text>
+            <text x="100" y="120" font-family="Rajdhani" font-size="10" fill="#8A2BE2" text-anchor="middle">TOTAL SUPPLY</text>
+          </svg>
+        </div>
+        <div class="tokenomics-info">
+          <div class="tokenomics-item">
+            <div class="token-color community"></div>
+            <div>
+              <strong>50% - Community Distribution</strong>
+              <p>Initial airdrops, liquidity provisions, and community incentives</p>
+            </div>
+          </div>
+          <div class="tokenomics-item">
+            <div class="token-color staking"></div>
+            <div>
+              <strong>20% - Staking Rewards</strong>
+              <p>Long-term holders earn additional $ABY through staking pools</p>
+            </div>
+          </div>
+          <div class="tokenomics-item">
+            <div class="token-color burn-events"></div>
+            <div>
+              <strong>15% - Burn Events</strong>
+              <p>Reserved for periodic apocalyptic supply destruction</p>
+            </div>
+          </div>
+          <div class="tokenomics-item">
+            <div class="token-color team"></div>
+            <div>
+              <strong>10% - Core Team</strong>
+              <p>4-year vesting with 1-year cliff for developers</p>
+            </div>
+          </div>
+          <div class="tokenomics-item">
+            <div class="token-color marketing"></div>
+            <div>
+              <strong>5% - Marketing</strong>
+              <p>Partnerships, exchanges listings, and promotional campaigns</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Join The Abyss</h2>
+      <p>The token that consumes itself, becoming increasingly rare and valuable. Will you embrace the darkness?</p>
+      <div class="cta-buttons">
+        <a href="#" class="cta-btn primary-btn pulse">Buy $ABY Now</a>
+        <a href="#" class="cta-btn secondary-btn">Join Community</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>$Abyssum (ABY)</h3>
+          <p>The Dark Force That Burns and Evolves!</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#about">About Project</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#functionality">How It Works</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Whitepaper</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Smart Contract</a></li>
+            <li><a href="#">Audit Report</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Abyssum (ABY). All rights reserved. The fire burns eternal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <script>
+    // Simple animation for elements when they come into view
+    document.addEventListener('DOMContentLoaded', function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.feature-card, .function-item, .tokenomics-item').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
